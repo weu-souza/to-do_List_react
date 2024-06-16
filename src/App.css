@@ -1,0 +1,163 @@
+body {
+  display: flex;
+  flex-flow: column wrap;
+  font-family: "Arial", sans-serif;
+  /* align-items: center; */
+}
+.container {
+  margin: 200px auto;
+  max-width: 500px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+form {
+  display: flex;
+  width: 90%;
+  flex-flow: row wrap;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  padding: 10px;
+  gap: 10px;
+}
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  
+  flex: 1 2 auto;
+}
+input[type="text"]:focus {
+  outline: none;
+}
+.button-add {
+  font-family: 'poppins',sans-serif;
+  cursor: pointer;
+  background-color: #337ab7;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  flex: 1 2 20px;
+  border-radius: 4px;
+}
+.button-add:focus {
+  outline: none;
+}
+.button-add:hover {
+  background: #286090;
+}
+.button-add:hover {
+  background-color: #204d74;
+}
+
+h1 {
+  font-family: 'poppins',sans-serif;
+  color: #333;
+  margin: 20px auto;
+}
+
+ul {
+  width: 90%;
+  padding-bottom: 8px;
+  border: none;
+}
+
+li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  
+}
+.text-container{
+display: flex;
+align-items: center;
+gap: 10px;
+}
+.task-txt {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px;
+  
+}
+.text-undone{
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 10px;
+  cursor: pointer;
+  transition: 500ms;
+}
+.text-done{
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  color: white;
+  border-radius: 50%;
+  border: 2px solid #5cb85c;
+  background-image: url('assets/img/check-solid.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 10px;
+  cursor: pointer;
+  transition: 500ms;
+}
+
+.button-rmv {
+  font-family: 'poppins',sans-serif;
+  font-weight: bold;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-rmv:hover {
+  background-color: #449d44;
+}
+
+.button-rmv:active {
+  background-color: #398439;
+}
+
+.sem-tarefas{
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+  width: 90%;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: none;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center; 
+
+}
+
+.no-task-title{
+  font-family:'poppins',sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: #737373;
+  border:5px solid #cacaca;
+  padding: 5px 10px;
+  
+  width: 100%;
+  text-align: center;
+
+}
